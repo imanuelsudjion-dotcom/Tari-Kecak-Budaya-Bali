@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tari Kecak Bali - Presentasi Budaya Lokal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <section id="hero" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch-fast" data-text="TARI KECAK BALI">TARI KECAK BALI</h1>
+            <p class="subtitle">Tradisi • Energi • Ritual</p>
+            <button id="play-audio" class="play-btn">Putar Audio</button>
+        </div>
+        <audio id="kecak-audio" loop>
+            <source src="audio/kecak.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung audio.
+        </audio>
+    </section>
+
+    <section id="content" class="content">
+        <div id="content-particles"></div>
+        <div class="content-container">
+            <h2 class="section-header glitch-light">Apa itu Kecak</h2>
+            <p class="content-text">Tari Kecak adalah tarian tradisional Bali yang melibatkan kelompok penari pria membentuk lingkaran, mengeluarkan suara "cak-cak" seperti monyet, sambil menceritakan epik Ramayana dengan gerakan dinamis dan api obor.</p>
+
+            <h2 class="section-header glitch-light">Sejarah & Evolusi</h2>
+            <div class="timeline">
+                <div class="timeline-item">1930-an: Diciptakan oleh Wayan Limbak dari Batubulan.</div>
+                <div class="timeline-item">1970-an: Berkembang sebagai atraksi wisata di Uluwatu.</div>
+                <div class="timeline-item">Sekarang: Dipentaskan di festival internasional dan panggung global.</div>
+            </div>
+
+            <h2 class="section-header glitch-light">Struktur Pertunjukan</h2>
+            <ul class="bullet-list">
+                <li><span class="icon">🔥</span> Pembukaan dengan formasi lingkaran.</li>
+                <li><span class="icon">👥</span> Penari utama (Rama) melawan Rahwana.</li>
+                <li><span class="icon">🐒</span> Peran Hanoman sebagai pahlawan.</li>
+            </ul>
+
+            <h2 class="section-header glitch-light">Kostum & Properti</h2>
+            <div class="kostum-grid">
+                <img src="img/kecak1.jpg" alt="Kostum Kecak" class="kostum-img">
+                <p class="caption">Kain poleng hitam-putih, tanpa topeng, dengan obor api untuk suasana malam.</p>
+            </div>
+
+            <h2 class="section-header glitch-light">Fakta Cepat</h2>
+            <div class="fakta-grid">
+                <div class="fakta-item">Ritme "cak" berarti satu, simbol kesatuan.</div>
+                <div class="fakta-item">Melibatkan 50-100 penari pria.</div>
+                <div class="fakta-item">Durasi pertunjukan sekitar 1 jam.</div>
+                <div class="fakta-item">Inspirasi dari ritual keagamaan Bali.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div id="gallery-particles"></div>
+        <h2 class="section-header glitch-light">Galeri</h2>
+        <div class="gallery-grid">
+            <img src="img/kecak1.jpg" alt="Tari Kecak 1" class="gallery-img">
+            <img src="img/kecak2.jpg" alt="Tari Kecak 2" class="gallery-img">
+            <img src="img/kecak3.jpg" alt="Tari Kecak 3" class="gallery-img">
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </section>
+
+    <section id="maps" class="maps">
+        <div id="maps-particles"></div>
+        <h2 class="section-header glitch-light">Lokasi Pertunjukan</h2>
+        <div class="maps-grid">
+            <div class="map-card" onclick="openMap('Uluwatu')">
+                <img src="img/uluwatu-thumb.jpg" alt="Uluwatu" class="map-thumb">
+                <h3>Uluwatu</h3>
+                <p>Pertunjukan spektakuler di tebing laut.</p>
+            </div>
+            <div class="map-card" onclick="openMap('GWK')">
+                <img src="img/gwk-thumb.jpg" alt="GWK" class="map-thumb">
+                <h3>GWK Cultural Park</h3>
+                <p>Di kompleks patung raksasa.</p>
+            </div>
+            <div class="map-card" onclick="openMap('Batubulan')">
+                <img src="img/batubulan-thumb.jpg" alt="Batubulan" class="map-thumb">
+                <h3>Batubulan</h3>
+                <p>Desa asal, pertunjukan autentik.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div id="footer-particles"></div>
+        <p>&copy; 2023 Tari Kecak Bali - Presentasi Budaya Lokal. Dibuat dengan semangat tradisi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
